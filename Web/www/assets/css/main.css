@@ -1,0 +1,625 @@
+html {
+	
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/background.jpg');
+     background-repeat: no-repeat;
+    background-attachment: fixed;
+	min-height:100%;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+}
+
+body {
+	background:transparent;
+	min-height:100%; 	
+	-webkit-font-smoothing: antialiased;
+	-webkit-overflow-scrolling: touch;
+	line-height: 1.5em;
+	font-size:14px;
+	font-family: Helvetica, Arial, sans-serif;
+	color:#fff;
+	color:rgba(255,255,255,.8); 
+	font-weight: normal;
+}
+body {
+    animation: myfadeInAnimation 2s;
+}
+
+@keyframe myfadeInAnimation {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@-webkit-keyframes myfadeInAnimation {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/********************************************************/
+/*                    Victor.NAVBAR                    */
+/********************************************************/
+.mainmenu { z-index: 999999; width:100%;  padding: 30px 0 0 0;}
+@media (min-width: 768px) {
+	.mainmenu { position: fixed; }
+}
+
+.navbar-toggle {
+	position:relative;
+	float:left;
+	display:block;
+	padding: 9px 10px;
+	background: rgba(255, 255, 255, 0.2);
+	background-image: none;
+	border: 0 none;
+	top:0px; 
+	-webkit-border-radius: 2px;
+	   -moz-border-radius: 2px;
+	        border-radius: 2px;
+	outline: 0;
+	opacity: 1;
+	-webkit-transition: all .45s;
+	   -moz-transition: all .45s;
+	        transition: all .45s;
+	        float: left;
+}
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #fff;
+}
+.navbar-toggle .icon-bar + .icon-bar {
+	margin-top: 4px;
+}
+.open .navbar-toggle { 
+	top:-70px; 
+	opacity: 0;  
+}
+.mainmenu .dropdown-menu {
+	top: -14em;
+	left: 0px;
+	font-size: 13px;
+	padding:0;
+	background:none;
+	border:0 none;
+	border-radius: 2px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	display:block;
+	opacity:0;
+	-webkit-transition: all .45s;
+	   -moz-transition: all .45s;
+	        transition: all .45s;
+}
+.mainmenu .dropdown-menu .active { 
+	font-weight:bold;
+}
+.mainmenu .open .dropdown-menu { 
+	top:2px;
+	opacity:1;
+}
+.mainmenu .dropdown-menu a { 
+	padding:10px 10px;
+	margin:0;
+	color:white;
+	text-decoration: none;
+	-webkit-border-radius: 2px;
+	   -moz-border-radius: 2px;
+	        border-radius: 2px;
+}
+
+/* Menu Styles */
+
+.third-level-menu
+{
+    position: absolute;
+    top: 0;
+    right: -150px;
+    width: 150px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.third-level-menu > li
+{
+    height: 30px;
+    background: #999999;
+}
+.third-level-menu > li:hover { background: #CCCCCC; }
+
+.second-level-menu
+{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 200px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.second-level-menu > li
+{
+    position: relative;
+    height: 30px;
+    width:auto;
+    background: #80857A;
+}
+.second-level-menu > li:hover { background: #CCCCCC; }
+
+.top-level-menu
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.top-level-menu > li
+{
+    position: relative;
+    float: left;
+    height: 30px;
+    width: 200px;
+    background: #80857A;
+}
+.top-level-menu > li:hover { background: #CCCCCC; }
+
+.top-level-menu li:hover > ul
+{
+    /* On hover, display the next level's menu */
+    display: inline;
+}
+
+
+/* Menu Link Styles */
+
+.top-level-menu a /* Apply to all links inside the multi-level menu */
+{
+    font: bold 14px Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0 0 0 10px;
+
+    /* Make the link cover the entire list item-container */
+   
+    line-height: 30px;
+}
+.top-level-menu a:hover { color: #000000; }
+
+
+
+/********************************************************/
+/*             Victor.SECTIONS                          */
+/********************************************************/
+.section { 
+	z-index: 1;
+	min-height:420px;
+	width: 100%; 
+	overflow:auto;
+	height:100%;
+	padding-top:100px;
+	padding-bottom:50px; 
+	display:none;
+	top:0;
+} 
+@media (min-width: 768px) {
+	.section { padding-top:160px;}
+}
+
+/* Show one of sections */
+#head { 
+	display: block;
+}
+
+
+/********************************************************/
+/*                      Victor.TYPO                     */
+/********************************************************/
+a { color:#fff; text-decoration: none; }
+a:hover, a:active { color:#fff; text-decoration: underline; }
+.lead { 
+	font-weight:normal;
+	font-size:1.5em;
+	line-height:1.2em;
+}
+
+.title,
+.subtitle { 
+	font-family: 'Wire One', Helvetica, Arial, sans-serif;
+	font-weight:normal;
+	font-size:7em;
+	margin-bottom:15px; 
+	color:#FDF9F4; 
+	line-height:1em;
+}
+.subtitle { 
+	line-height:.9em;
+	font-size:5.5em;
+	margin-top:0;
+	margin-bottom:40px; 
+}
+.tagline { 
+	font-size:1.4em;
+	line-height:1.3em;
+	font-weight:normal;
+	margin-bottom:75px;
+}
+
+@media (max-width: 767px) {
+	.lead { 
+		font-size:1.3em;
+	}
+}
+
+
+/********************************************************/
+/*                   Victor.BUTTONS                     */
+/********************************************************/
+.btn{
+	color:#333;
+	text-shadow: none;
+	text-decoration: none;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border:0 none;
+}
+.btn:hover {
+	color:#000;
+}
+.btn-lg { 
+	padding:16px 30px;
+	font-size:inherit;
+}
+
+.btn-link {
+	color:rgba(255,255,255,.8);
+}
+.btn-link:hover, .btn-link:focus, .btn-link:active {
+	color:#fff
+}
+.btn-default {
+	background: rgba(255,255,255,.5);
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active {
+	background: rgba(255,255,255,.8);
+}
+.btn-primary {
+	background: rgba(255,255,255,.2);
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:active {
+	background: rgba(255,255,255,.5);
+}
+
+
+
+/********************************************************/
+/*                 Victor.THUMB                         */
+/********************************************************/
+.thumbnail {
+	background-color: rgba(255,255,255,.2);
+	border: 0 none;
+	padding:10px;
+	-webkit-border-radius: 2px;
+	   -moz-border-radius: 2px;
+	        border-radius: 2px;
+}
+.thumbnail .caption {
+	color: inherit;
+}
+
+
+
+/********************************************************/
+/*                 Victor.ELSE                          */
+/********************************************************/
+
+.list-social .btn { 
+	font-size:1.3em; 
+}
+.list-social .btn:hover, .list-social .btn:active, .list-social .btn:focus { 
+	text-decoration: none; 
+}
+
+
+/* Social buttons in the footer */
+#social { 
+	margin-top:50px;
+	margin-bottom:50px;
+}
+#social .wrapper { 
+	width:340px; 
+	margin:0 auto;
+}
+
+/********************************************************/
+/*                 Victor.TIMELINE                      */
+/********************************************************/
+
+
+/*
+    Colorbox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none; -ms-interpolation-mode:bicubic;}
+.cboxIframe{width:100%; height:100%; display:block; border:0;}
+#colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+
+/*
+    User Style:
+    Change the following styles to modify the appearance of Colorbox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay{background:url(images/overlay.png) repeat 0 0;}
+#colorbox{outline:0;}
+    #cboxTopLeft{width:21px; height:21px; background:url(images/controls.png) no-repeat -101px 0;}
+    #cboxTopRight{width:21px; height:21px; background:url(images/controls.png) no-repeat -130px 0;}
+    #cboxBottomLeft{width:21px; height:21px; background:url(images/controls.png) no-repeat -101px -29px;}
+    #cboxBottomRight{width:21px; height:21px; background:url(images/controls.png) no-repeat -130px -29px;}
+    #cboxMiddleLeft{width:21px; background:url(images/controls.png) left top repeat-y;}
+    #cboxMiddleRight{width:21px; background:url(images/controls.png) right top repeat-y;}
+    #cboxTopCenter{height:21px; background:url(images/border.png) 0 0 repeat-x;}
+    #cboxBottomCenter{height:21px; background:url(images/border.png) 0 -29px repeat-x;}
+    #cboxContent{background:#fff; overflow:hidden;}
+        .cboxIframe{background:#fff;}
+        #cboxError{padding:50px; border:1px solid #ccc;}
+        #cboxLoadedContent{margin-bottom:28px;}
+        #cboxTitle{position:absolute; bottom:4px; left:0; text-align:center; width:100%; color:#949494;}
+        #cboxCurrent{position:absolute; bottom:4px; left:58px; color:#949494;}
+        #cboxLoadingOverlay{background:url(images/loading_background.png) no-repeat center center;}
+        #cboxLoadingGraphic{background:url(images/loading.gif) no-repeat center center;}
+
+        /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+        #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; width:auto; background:none; }
+
+        /* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+        #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
+
+        #cboxSlideshow{position:absolute; bottom:4px; right:30px; color:#0092ef;}
+        #cboxPrevious{position:absolute; bottom:0; left:0; background:url(images/controls.png) no-repeat -75px 0; width:25px; height:25px; text-indent:-9999px;}
+        #cboxPrevious:hover{background-position:-75px -25px;}
+        #cboxNext{position:absolute; bottom:0; left:27px; background:url(images/controls.png) no-repeat -50px 0; width:25px; height:25px; text-indent:-9999px;}
+        #cboxNext:hover{background-position:-50px -25px;}
+        #cboxClose{position:absolute; bottom:0; right:0; background:url(images/controls.png) no-repeat -25px 0; width:25px; height:25px; text-indent:-9999px;}
+        #cboxClose:hover{background-position:-25px -25px;}
+
+/*
+  The following fixes a problem where IE7 and IE8 replace a PNG's alpha transparency with a black fill
+  when an alpha filter (opacity change) is set on the element or ancestor element.  This style is not applied to or needed in IE9.
+  See: http://jacklmoore.com/notes/ie-transparency-problems/
+*/
+.cboxIE #cboxTopLeft,
+.cboxIE #cboxTopCenter,
+.cboxIE #cboxTopRight,
+.cboxIE #cboxBottomLeft,
+.cboxIE #cboxBottomCenter,
+.cboxIE #cboxBottomRight,
+.cboxIE #cboxMiddleLeft,
+.cboxIE #cboxMiddleRight {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
+}
+
+
+/* ============ TIMELINER.JS ============= */
+.timeline-container {
+  border-left: 2px solid #ccc;
+  margin: 20px auto;
+    margin-left:250px;
+  width: 900px;
+}
+.timeline-toggle {
+  background: #000;
+  border-color: #161616;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  color: #ccc;
+  cursor: pointer;
+  float: right;
+  font-size: 12px;
+  margin-right: 0;
+  padding: 3px 5px;
+  white-space: nowrap;
+}
+.timeline-wrapper {
+  clear: left;
+  float: left;
+  margin: 0 0 12px;
+  width: 900px;
+}
+.timeline-wrapper h2 {
+  background: url(../images/timeline_century_tick.gif) left center no-repeat;
+  font-family: Palatino, "Times New Roman", Times, serif;
+  cursor: pointer;
+  font-size: 3em;
+  font-weight: 400;
+  margin: 0 0 10px;
+  padding: 4px 4px 4px 20px;
+}
+.timeline-wrapper h2 span {
+  background: #ccc;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  color: #131313;
+  letter-spacing: 0.1em;
+  line-height: 1.7em;
+  padding: 3px 5px 1px;
+}
+.timeline-series {
+  clear: left;
+  float: left;
+  margin: 0 12px 0 0;
+  padding: 4px 4px 4px 0;
+  position: relative;
+  width: 880px;
+}
+.timeline-series dt {
+  background: url(../images/timeline_decade_tick.gif) left center no-repeat;
+  clear: left;
+  font-size: 1.6em;
+  list-style-type: none;
+  line-height: 1.2em;
+  margin: 0 0 12px;
+  padding: 0 0 0 24px;
+  white-space: nowrap;
+}
+.timeline-series dt a {
+  color: #999;
+  cursor: pointer;
+}
+.timeline-series dt a .closed {
+  color: #999;
+  font-size: 1em;
+  margin-left: 0;
+}
+.timeline-series dt a .open {
+  color: #7DBADF;
+}
+.timeline-series dt a:hover {
+  color: #7DBADF;
+}
+.timeline-series dd {
+  padding-left: 24px;
+  width: 100%;
+}
+.timeline-series dd h3 {
+  color: #FFF;
+  clear: both;
+  float: left;
+  font-size: 1.5em;
+  margin: 0;
+  white-space: nowrap;
+}
+.timeline-event-content {
+  display: none;
+}
+.timeline-event-content p {
+  clear: left;
+  float: left;
+  line-height: 1.5em;
+  margin: 6px 0 10px;
+  width: 500px;
+}
+.timeline-event-content h4 {
+  clear: left;
+  float: left;
+  font-size: 1.4em;
+  font-weight: 400;
+  margin: 10px 0 0;
+  padding: 0 0 0 20px;
+}
+.timeline-event-content blockquote {
+  border-left: 2px solid #ccc;
+  clear: left;
+  float: left;
+  font-size: 1.8em;
+  margin-left: 0;
+  padding: 0 30px;
+  width: 400px;
+}
+.timeline-event-content blockquote .attribution {
+  font-size: 0.7em;
+  text-align: right;
+}
+.timeline-event-content .media {
+  float: right;
+  padding: 0 0 12px;
+  width: 300px;
+}
+.timeline-event-content .media img {
+  border: 2px solid #000;
+  margin: 0;
+}
+.timeline-event-content .media p {
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0;
+}
+.timeline-event-content .media a:link,
+.timeline-event-content .media a:visited {
+  color: #ab221b;
+}
+.timeline-event-content .media a:hover {
+  color: #7DBADF;
+}
+.clear {
+  clear: both;
+}
+
+
+/********************************************************/
+/*                 Victor.BUBBLE                        */
+/********************************************************/
+
+
+.bubbletree-wrapper {
+	width: 500px;
+	height: 500px;
+    display:block;
+    margin:auto;
+   
+	position: absolute;
+}
+
+.bubbletree {
+	
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+}
+
+.bubbletree .bubbletree-label {
+	position: absolute;
+	color: #fff;
+	text-align: center;
+	cursor: default;
+}
+
+.bubbletree .bubbletree-amount {
+	font-family: Graublau, Georgia, sans-serif;
+	font-size: 16px;
+}
+
+.bubbletree .bubbletree-desc {
+	font-family: sans-serif;
+	font-size: 11px;
+
+}
+
+.bubbletree .bubbletree-label2 {
+	position: absolute;
+	color: #000;
+	text-align: center;
+	cursor: default;
+	font-size: 11px;
+	font-family: sans-serif;
+	margin-top:5px;
+}
+
+.bubbletree .bubbletree-label2 span {
+	background: #fff;
+}
+
+.loading {
+	z-index: 1000;
+	position: absolute;
+	width: 700px;
+	height: 400px;
+}
+
+
+
+
+
