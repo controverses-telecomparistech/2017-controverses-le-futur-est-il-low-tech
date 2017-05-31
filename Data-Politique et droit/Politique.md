@@ -1,4 +1,4 @@
-# LE FUTUR EST-IL LOW TECH ?
+# Les politiques et Juridique
 <p>Face aux des problème du monde, comme réchauffement climatique, la faim dans le monde, les guerres, les épidémies, de nombreux acteurs proposent l'innovation technologique comme solution à tous nos maux. La haute technologie est donc proposée pour résoudre les nombreuses crises qui frappent, de diverses manières, la planète entière.</p>
 <p>Toutefois, des associations et les ONG, mais aussi parmi certains scientifiques et ingénieurs défendent une future basse technologie. Il croit que les nouvelles solutions technologiques entraînent de nouveaux besoins et pénuries, avec leur lot de pollutions et de destructions sociales. Cet extractivisme forcené va continuer à abîmer de manière irréversible, et à un rythme accéléré, notre planète.</p>
 <p>La controverse entre le low-tech et high-tech est relativement large et nouveau, on aborde cette controverse par des sous-débat « Obsolescence programmée » et « Économie des ressources ».</p>
