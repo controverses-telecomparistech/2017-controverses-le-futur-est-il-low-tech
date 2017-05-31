@@ -9,7 +9,7 @@
 <p>Dans le controverse sur l’obsolescence programmée, les organisations et les gens qui défendent les Low-Tech disent que les objets High-Tech permettent de faire de l'obsolescence programmée du fait qu'ils sont plus complexes, il est difficile de prouver qu'une entreprise fait en sorte que son produit ne soit plus fonctionnel au bout d'une certaine durée. Même si la définition de L’Agence de l’environnement et de la maîtrise de l’énergie (ADEME) donne une définition comme ci-dessous :</p>
 
 > L’obsolescence programmée se définit par tout stratagème par lequel un bien voit sa durée de vie sciemment réduite dès sa conception, limitant ainsi sa durée d’usage pour des raisons de modèle économique.
-![Benoît Hamon](https://pbs.twimg.com/profile_images/846787408712646657/cxRnGUlS.jpg)
+
 <p>Mais cette définition n'est pas claire. Pour lutter contre l'obsolescence et augmenter l'espérance de vie du produit, Le groupe Europe Écologie les Verts du Sénat du Sénat avec Bill of Jean-Vincent Place a déposé un projet de loi le 18 mars 2013. Ce texte est considéré comme donnant une définition plus précise du concept. Pour étendre la conformité juridique des produits, pour faciliter l'accès aux pièces de rechange requises pour la réparation d'un produit et pour mettre en place des stratégies d'obsolescence punissables de deux ans de prison et 37 500 € d'amendes. Sénateur de l’Essonne et président du groupe Europe-Écologie-Les-Verts au Sénat, Jean-Vincent Placé, proposé le 18 mars 2013 un projet de loi au Bureau du Président du Sénat afin de lutter contre l'obsolescence planifiée . Sa proposition est incluse dans le projet de loi sur la consommation qui présentera en juin le ministre responsable de l'économie sociale, Benoît Hamon.</p>
 
 
