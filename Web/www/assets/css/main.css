@@ -1,6 +1,6 @@
 html {
 	
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/background.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('../images/background.jpg');
      background-repeat: no-repeat;
     background-attachment: fixed;
 	min-height:100%;
@@ -194,7 +194,7 @@ body {
 /********************************************************/
 /*             Victor.SECTIONS                          */
 /********************************************************/
-.section { 
+section { 
 	z-index: 1;
 	min-height:420px;
 	width: 100%; 
@@ -202,9 +202,14 @@ body {
 	height:100%;
 	padding-top:100px;
 	padding-bottom:50px; 
-	display:none;
+	
 	top:0;
 } 
+
+section:not(#head) { 
+	margin-top:-190px;
+} 
+
 @media (min-width: 768px) {
 	.section { padding-top:160px;}
 }
@@ -565,24 +570,27 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 
 
 .bubbletree-wrapper {
-	width: 500px;
-	height: 500px;
+	width: 100%;
+	height: 100%;
     display:block;
-    margin:auto;
-   
+    margin-left: auto;
+    
+    padding-right: 0;
 	position: absolute;
 }
 
 .bubbletree {
 	
 	position: relative;
+    margin-top:auto;
 	height: 100%;
+    width:100%;
 	overflow: hidden;
 }
 
 .bubbletree .bubbletree-label {
 	position: absolute;
-	color: #fff;
+	color: #000;
 	text-align: center;
 	cursor: default;
 }
@@ -609,14 +617,14 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 }
 
 .bubbletree .bubbletree-label2 span {
-	background: #fff;
+	background: #000;
 }
 
 .loading {
 	z-index: 1000;
 	position: absolute;
-	width: 700px;
-	height: 400px;
+	width: 100%;
+	height: 100%;
 }
 
 

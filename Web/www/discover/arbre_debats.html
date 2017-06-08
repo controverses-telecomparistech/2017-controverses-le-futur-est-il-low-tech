@@ -17,7 +17,7 @@
 	<!-- Fonts -->
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link href='http://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>
-    
+    <link type="text/css" rel="stylesheet" href="../assets/css/jquery.qtip.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
 
@@ -28,7 +28,7 @@
     
 
 
-
+<script type="text/javascript" src="../assets/js/jquery.qtip.min.js"></script>
 	<script type="text/javascript" src="../assets/js/jquery.history.js"></script>
 	<script type="text/javascript" src="../assets/js/raphael-min.js"></script>
 	<script type="text/javascript" src="../assets/js/vis4.js"></script>
@@ -36,17 +36,113 @@
 	<script type="text/javascript" src="../assets/js/bubbletree.js"></script>
 	<link rel="stylesheet" type="text/css" href="../assets/css/bubbletree.css" />	
     <script type="text/javascript">
- 
+        
+var contant=["<b>Réalité économique ? </b> <br/><br/> Introduire en masse le numérique à l’école impose des investissement conséquents à l’échelle des collectivités, d’abord au niveau financier mais aussi pour le choix et la configuration des équipements, la formation du corps enseignant ainsi que la sécurisation et la maintenance des parcs informatiques. <br/><br/> Argument pour : les emplois de demain seront en grande partie numériques, donc former nos enfants à les utiliser à l’école est un moyen de les former à la société de demain. <br/><br/> Argument contre ce point de vue : on favorise la visibilité de ce secteur auprès des enfants et on leur donne moins de chances d’explorer d’autres secteurs de travail, on les conditionne en quelque sorte à travailler pour les grandes firmes du numérique de demain (Microsoft & co)", "<b>Quels apports éducatifs ?</b> <br/><br/> Un suivi des élèves plus facile avec la possibilité d’envoyer les devoirs directement à l’enseignant par internet,  : un rapport élève / enseignant plus efficace <br/> <br/> Un outil plus pratique pour les élèves, pour effacer ce qu’ils écrivent par exemple (amélioration du rapport à l’erreur)  <br/> <br/> Les détracteurs comme P Bihouix  s’appuient sur le fait que l’éducation c’est aussi l’école de la vie (erreurs, ennui, lenteur, aspect rébarbatif…), réalité dont les enfants seront coupés avec les tablettes. Les cahiers de texte numériques écrits par les professeurs constituent un exemple de conséquences sur l’apprentissage de l’autonomie pour les enfants.  <br/> <br/> Les questions sanitaires peuvent également jouer dans l’apprentissage de l’élève (exposition aux radiofréquences, troubles du sommeil) : ce type de système serait donc plus réservé à des étudiants plus âgés.", "<b>Réduction des inégalités ?</b> <br/><br/> Tablettes pour tous : aucune distinction apparente entre élèves  <br/> <br/> Argument contre : inégalité dans l’usage qui sera fait des tablettes d’un enfant à l’autre (exposition directe aux réseaux sociaux en plus du contenu pédagogique utilisé pour les devoirs)  <br/> <br/> Les enfants les moins favorisés sont souvent les plus exposés aux ordinateurs, tablettes, etc déjà chez eux, donc cela leur ajoute un lieu dans lequel ils côtoient ces appareils et il sera encore plus difficile de s’en déconnecter pour l’apprentissage scolaire fondamental. " , "<b>Conséquences sur l’activité d’enseignement ?</b> <br/><br/> Diversification des méthodes d’apprentissage : possibilité de faire des devoirs oraux à la maison (enregistrés avec les tablettes) par exemple  <br/> Attention à la perte de temps occasionnée par la complexité des systèmes : la réponse aux problèmes annexes liés au matériel ont tendance à remplacer l’activité d’enseignement", " <b>Les “green tech” sont-elles renouvelables ?</b> <br/><br/>  Les énergies vertes ne sont pas aussi propres qu’on le pense souvent : on oublie le processus de fabrication <br/><br/> Elles dépendent des énergies fossiles à la fois au niveau de l’extraction des matières premières pour les concevoir et de leur financement économique. Le choix le plus raisonnable dans ce sens est donc de commencer par réduire notre consommation énergétique individuellement.  <br/><br/> Elles utilisent des ressources rares pour leur fabrication (Terres rares, argent etc) ce qui limite leur capacité de production et il sera difficile de combler nos besoins énergétiques actuels avec cette quantité finie de matières premières", "<b>La ville de demain est-elle une “smart city” bourrée de High-Tech et objets connectés ?</b> <br/><br/> <b>1er point de vue</b> <br/><br/> Certains dispositifs High-Tech contribuent à faire des économies d’énergies. En effet, en créant des systèmes avec objets connectés, on peut organiser la gestion des ressources énergétiques au sein d’une ville de manière centralisée (distribution d’eau, gaz, électricité…). Le fait que de plus en plus de personnes vivent en ville complexifie leur gestion et les High-Tech sont un moyen de gérer cette complexité.  <br/><br/> Exemples concrets des économies d’énergie possibles grâce aux objets connectés :  <br/><br/> Développement des transports en commun <br/><br/> Gestion des déchets <br/><br/> Gestion efficace de l’éclairage public <br/><br/> Les High-Tech sont également un moyen d’améliorer le cadre de vie des habitants, par exemple en augmentant la couverture wi-fi des villes ou en créant des plateformes en ligne pour qu’ils puissent signaler des problèmes à leur commune ou participer à la vie communale plus facilement.  <br/><br/> <b>2eme point de vue</b> <br/><br/> L’économie des ressources louée par la smart city impose des investissements personnels des citoyens pour équiper leur habitat de dispositifs moins gourmands en énergie. De ce fait cette économie d’énergies pourra s’appliquer uniquement aux personnes ayant le plus de moyens financiers s’il n’y a pas de subvention extérieure.  <br/><br/> L’introduction en masse d’objets connectés accroît également le problème de confidentialité des données par rapport à l’usage des données des différents capteurs, potentiellement commercial. La privatisation des dispositifs utilisés par ces villes connectées en ferait la cible de conflits d’intérêt importants.  <br/><br/> Le seul moyen viable de faire de réelles économies d’énergie est de s’investir individuellement en changeant notre mentalité. Des conséquences significatives seront obtenues grâce à une petite contribution de chacun de nous (théorie de l’effet cumulé). C’est le point de vue défendu par des mouvements comme celui des Colibris de Pierre Rabhi ou des Villes en Transition (villes inscrites dans un mouvement international de transition énergétique par des actions locales)."]        
+ function addTitle(content){
+    console.log('done');
+    $("#sp2").html(content);   
+};
+      
 		$(function() {
 			var data = {
-				label: 'Total',
-				amount: 100,
-				color: '#0066bb',  // color for root node, will be inherited by children
-				children: [
-					{ label: 'First child', amount: 30 },
-					{ label: 'Second child', amount: 40 },
-					{ label: 'Third child', amount: 30, color: '#ff3300' }
-				]
+				'id': 'root',
+				'label': '<p style="color:black;"> Le futur est-il low-tech ? </p>',
+				'amount': 75000,
+                'color' : '#FFF5EE',
+                
+               
+				'children': [{
+					'label': '<a href="../details/synthese.html#obsolescence">Obsolescence programmée</a>',
+					'id': 'foo',
+					'amount': 75000,
+                     'color' : '#CD5C5C',
+					'children': [{
+						'label': '<a style="color:black;" onClick="addTitle(' + "'<b>Economie de croissance </b> <br/><br/> Ademe : « Seuls 44% des appareils qui tombent en panne sont réparés » <br/> ‘Bon pour la casse‘ de Serge Latouche. Obsolescence programmée : l’un des 3 piliers de notre système de croissance économique avec le crédit et la publicité'" + ');"> Economie de croissance </a>',
+						'amount': 85000,
+                        'color' : '#E0FFFF',
+						'children': []
+					}, {
+						'label': '<a style="color:black;" onClick="addTitle(' + "'<b>Impact environnemental </b> <br/><br/> Surexploitation des matières premières insoutenable dans la filière électrique et électronique selon l’Ademe <br/> Problèmes d’incinération des déchets et rejet de fumées toxiques <br/> Décharges dans les pays sous-développés'" + ');"> Impact environnemental </a>',
+						'amount': 85000,
+                        'color' : '#E0FFFF',
+                        'id' : "ok",
+						'children': []
+					},
+                                {
+						'label': '<a style="color:black;" onClick="addTitle(' + "'<b>Désinformation </b> <br/><br/> Rupture citoyens/industrie en raison des nombreuses pannes et du SAV pas forcément développé en conséquence. <br/> Aucune indication de durée de vie sur les produits'" + ');"> Désinformation </a>',
+						'amount': 85000,
+                                    'color' : '#E0FFFF',
+						'children': []
+					},
+                                 {
+						'label': '<a style="color:black;" onClick="addTitle(' + "'<b>Ethique </b> <br/><br/> L’ingénieur est-il formé pour que les produits qu’il développe deviennent caduques au bout d’un certain temps ? <br/> N’est-il pas dans l’obligation de s’y plier pour garder son travail ?'" + ');"> Ethique </a>',
+						'amount': 85000,
+                                     'color' : '#E0FFFF',
+						'children': []
+					},
+                                 {
+						'label': '<a style="color:black;" onClick="addTitle(' + "'<b>Social </b> <br/><br/> Obsolescence des produits les moins chers encore plus importante : les personnes ayant le moins de moyens sont encore plus exposés aux inconvénients de l’obsolescence programmée. <br/> Perte d’emplois dans les filières de réparation'" + ');"> Social </a>',
+						'amount': 85000,
+                                     'color' : '#E0FFFF',
+						'children': []
+					}
+                                
+                                
+                                
+                                
+                                ]
+				},{
+					'label': '<a href="../details/synthese.html#numerique"> Le numérique à l’école </a>',
+					'amount': 75000,
+                     'color' : '#CD5C5C',
+					'children': [{
+						'label': '<a style="color:black;" onClick="addTitle(contant[0]);"> Réalité économique ? </a>',
+						'amount': 85000,
+                        'color' : '#E0FFFF',
+						'children': []
+					}, {
+						'label': '<a style="color:black;" onClick="addTitle(contant[1]);"> Quels apports éducatifs ? </a>',
+						'amount': 85000,
+                        'color' : '#E0FFFF',
+						'children': []
+					}, {
+						'label': '<a style="color:black;" onClick="addTitle(contant[2]);"> Réduction des inégalités ? </a>',
+						'amount': 85000,
+                        'color' : '#E0FFFF',
+						'children': []
+					},{
+						'label': '<a style="color:black;" onClick="addTitle(contant[3]);"> Conséquence sur l’activité d’enseignant ? </a>',
+						'amount': 85000,
+                        'color' : '#E0FFFF',
+						'children': []
+					}]
+				},{
+					'label': '<a href="../details/synthese.html#ressources"> L’économie des ressources</a>',
+					'amount': 75000,
+                     'color' : '#CD5C5C',
+                    
+					'level': 1,
+					'children': [{
+						'label': '<a style="color:black;" onClick="addTitle(contant[4]);"> Les “green-tech” sont elles renouvelables ? </a>',
+						'amount': 85000,
+                        'color' : '#E0FFFF',
+						'children': []
+					}, {
+						'label': '<a style="color:black;" onClick="addTitle(contant[5]);"> La ville de demain est-elle une <br/> “smart city” bourrée de High-Tech et objets connectés ? </a>',
+						'amount': 85000,
+                        'color' : '#E0FFFF',
+						'children': []
+					}]
+				},
+                            {
+                                'label': '<a href="../details/synthese.html#transhumanisme">Le transhumanisme</a>',
+					'amount': 75000,
+					'level': 1,
+                                 'color' : '#CD5C5C',
+                                
+                                
+                                
+                            }]
 			};
 
 			new BubbleTree({
@@ -59,17 +155,17 @@
     <style>
         #bubble {
             display:block;
-            height:500px;
-            width:500px;
+            height:50%;
+            width:50%;
+            padding-left:100px;
             margin:auto;
+            margin-left:200px; }
         
-        }
          #bubble_top {
             display:block;
-            height:100px;
+            height:auto;
             width:auto;
             margin:auto;
-        
         }
     
     </style>
@@ -101,8 +197,8 @@
         <a href="details.html">En détails</a>
         <ul class="second-level-menu">
            
-            <li><a href="../details/synthese.html">Synthèse</a></li>
-            
+          <li><a href="../details/synthese.html">Synthèse</a></li>
+            <li><a href="../details/legislation.html">Legislation</a></li>
               <li><a href="../details/entretiens.html">Entretiens</a></li>
                     
         </ul>
@@ -128,14 +224,14 @@
         <div id="bubble_top">
 <div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">	
 <h1 class="title">Arbre des débats</h1>
-				
+				<span  style=" width: 200px; float:left; position:relative;" id="sp2"></span>
             </div></div>
 		<div id="bubble">
 
                 
-				
-			<div class="bubbletree-wrapper">
-		<div class="bubbletree"></div>	</div>
+				<span style="float:right;" id="sp"></span>  
+			<div style="margin-top: 100px; width:90%; height:90%;" class="bubbletree-wrapper">
+		<div style="width:90%; height:90%;" class="bubbletree"></div>	</div>
 				
 	
 			</div> <!-- /col -->
@@ -143,7 +239,13 @@
 	
 	</div>
 </section>
+     <script>
+         
+   
+         
 
+
+</script>
 
 </body>
 </html>

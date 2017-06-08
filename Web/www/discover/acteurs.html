@@ -52,14 +52,16 @@
 -moz-animation-delay: 0.5s;
 animation-delay: 0.5s;
 }
-    
+    .legend {
+    background-color: rgba(0, 0, 0, .5);;
+}
     
     </style>
 
 </head>
 
     
-<body class="theme-invert">
+<body id="theme-invert">
 
 
 
@@ -86,8 +88,8 @@ animation-delay: 0.5s;
         <a href="details.html">En détails</a>
         <ul class="second-level-menu">
            
-            <li><a href="../details/synthese.html">Synthèse</a></li>
-            
+          <li><a href="../details/synthese.html">Synthèse</a></li>
+            <li><a href="../details/legislation.html">Legislation</a></li>
               <li><a href="../details/entretiens.html">Entretiens</a></li>
                     
         </ul>
@@ -114,79 +116,235 @@ animation-delay: 0.5s;
 	<div class="container">
 	<div class="row">
 			<div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center"> 
-                
+           
 <h2 class="text-center title">Cartographie des acteurs</h2>
+                <div class='legend' style="margin-bottom:20px; overflow:hidden; margin-top:50px; width:auto; padding:40px ">
+                    <div style="margin-top:40px; padding:auto; height:auto; float:right; text-align:left;">
+                <p><b>Pour :</b> le futur est Low-Tech</p>
+                <p><b>Contre :</b> le futur est High-Tech</p>
+                <p><b>Mitigé :</b> position partagée ou moins marquée</p>
+                    </div>
+                    <div style="float:left; text-align:left;">
+                    <p>
+                        Légende : 
+                        
+</p>
+                        <svg width="20" height="10">
+  <rect width="20" height="10" style="fill:#e2e20c;" />
+</svg> : Transhumanistes <br/>
+                        
+ <svg width="20" height="10">
+  <rect width="20" height="10" style="fill:#ef0c0c;" />
+</svg> : Grandes figures de la société civile <br/>                          
+                        
+<svg width="20" height="10">
+  <rect width="20" height="10" style="fill:#1b52db;" />
+</svg> : Collectifs et associations <br/>
+                        
+ <svg width="20" height="10">
+  <rect width="20" height="10" style="fill:#16bc0d;" />
+</svg> : Presse <br/>                       
+                        
+ <svg width="20" height="10">
+  <rect width="20" height="10" style="fill:#eaae36;" />
+</svg> : Entreprises <br/>                       
+                        
+ <svg width="20" height="10">
+  <rect width="20" height="10" style="fill:#7e23e8;" />
+</svg> : Politiques <br/>  
+ 
+                        
+                    
+  <svg width="20" height="10">
+  <rect width="20" height="10" style="fill:#17e0c3;" />
+</svg> : Entrepreneurs <br/>                     
+                    
+                 
+                    
+                    </div>
+                    
+                    
+                    </div>
+                <br/><br/><br/>
+               <b> <p><span style='column-count: 2;
+  column-gap: 20px;
+  height: 350px;' id="name"></span></p></b><br/>
+                
 <script>
     
-    var Acteurs_sujets=[[2],[1],[1,2]];
-        var Acteurs_colors=["#312783","#f39200","#2fac66"];
-        var Sujets_colors=["#a35780","#be1622"];
-        var Sujets_acteurs=[[2,3],[1,3]];
+    var Acteurs_sujets=[[1],[1],[3],[3],[3],[3],[3],[3],[3],[3],[3],[2],[3],[3],[3],[2],[2],[2],[2],[3],[2],[2],[2],[2],[2],[2],[2],[2],[3],[1],[1],[1],[1],[1],[1],[1],[1]];
+        var Acteurs_colors=["#e2e20c","#e2e20c","#ef0c0c","#ef0c0c","#ef0c0c","#1b52db","#1b52db","#1b52db","#1b52db","#1b52db","#1b52db","#1b52db","#16bc0d", "#16bc0d","#16bc0d","#16bc0d","#16bc0d","#16bc0d","#16bc0d","#eaae36","#eaae36","#eaae36","#eaae36","#eaae36","#7e23e8","#7e23e8","#7e23e8","#7e23e8","#7e23e8","#7e23e8","#7e23e8","#7e23e8", "#17e0c3", "#17e0c3", "#17e0c3", "#17e0c3" ];
+        var Sujets_colors=["#094c24","#37937d","#40db73"];
+        var Sujets_acteurs=[[],[],[]];
+        for (var i=0; i<Acteurs_sujets.length; i++){
+            console.log(Acteurs_sujets[i][0]-1);
+            Sujets_acteurs[Acteurs_sujets[i][0]-1].push(i+1);
+        }
+//        var Sujets_acteurs=[[1,2,36,35,34,33,32,31,30],[12,16,17,18,19,21,22,23,24,20,25,26,27,28],[3,4,5,6,7,8,9,10,11,13,14,15,29]];
     </script>
+
     
-    
-    
-<svg height="400" class="fade-in one" width="400" id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1483.61 1455.69"><defs>
+   <span style="width:300px; float:right;" id="sp"></span>  
+                <span style="width:200px; float:right;" id="sp2"></span>  
+<svg style="float:left;" id="Calque_1" width="500px" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 349.5 349.6">
+  <defs>
     <style>
-    
-    .cls-5{font-size:57.65px;fill:#fff;font-family:MyriadPro-Regular, Myriad Pro;}.cls-6{letter-spacing:-0.01em;}.cls-7{letter-spacing:0.01em;}.cls-8{letter-spacing:-0.01em;}
+      .cls-1 {
+        fill: #e2e20c;
+      }
+
+      .cls-1, .cls-10, .cls-11, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+        stroke: #fff;
+        stroke-linejoin: round;
+      }
+
+      .cls-2 {
+        fill: #ef0c0c;
+      }
+
+      .cls-3 {
+        fill: #1b52db;
+      }
+
+      .cls-4 {
+        fill: #16bc0d;
+      }
+
+      .cls-5 {
+        fill: #eaae36;
+      }
+
+      .cls-6 {
+        fill: #7e23e8;
+      }
+
+      .cls-7 {
+        fill: #17e0c3;
+      }
+
+      .cls-8 {
+        fill: #fff;
+      }
+
+      .cls-9 {
+        fill: #37937d;
+      }
+
+      .cls-10 {
+        fill: #094c24;
+      }
+
+      .cls-11 {
+        fill: #40db73;
+      }
+
+      .cls-12, .cls-13, .cls-14, .cls-15, .cls-16 {
+        isolation: isolate;
+      }
+
+      .cls-13, .cls-14, .cls-15, .cls-16 {
+        font-size: 12px;
+        font-family: MyriadPro-Regular, Myriad Pro;
+      }
+
+      .cls-13 {
+        letter-spacing: 0.01em;
+      }
+
+      .cls-15 {
+        letter-spacing: -0.02em;
+      }
+
+      .cls-16 {
+        letter-spacing: -0.01em;
+      }
     </style>
-    
-    </defs><title>test</title>
-    
-    
-    
-    
-    <path style="transition: stroke .3s ease-out; fill:none;stroke-width:225px;"  id="a2" d="M927.71,587.8A631.61,631.61,0,0,1,1302,618.19,624.19,624.19,0,0,1,1567.74,823.5,615.15,615.15,0,0,1,1640.89,951,609,609,0,0,1,1685,1117.93a618.48,618.48,0,0,1,4.18,72,611.07,611.07,0,0,1-112.1,353.45A623.72,623.72,0,0,1,1421,1697.46" transform="translate(-318.11 -459.96)"/>
-    
-    
-    <path style="transition: stroke .3s ease-out; fill:none;stroke-width:225px;"  id="a1" d="M462.65,1355.65a583.79,583.79,0,0,1,421.52-760" transform="translate(-318.11 -459.96)"/>
-    
-    
-    <path style="transition: stroke .3s ease-out; fill:none;stroke-width:225px;"  id="a3" d="M1369.26,1727.44a622.09,622.09,0,0,1-141.63,55.8,625.33,625.33,0,0,1-624.06-188.41,615.4,615.4,0,0,1-119-198.14" transform="translate(-318.11 -459.96)"/>
-    
-    
+  </defs>
+  <title>frise</title>
+  <path style="transition: fill .3s ease-out; " id="a1" d="M174.7.5a180.23,180.23,0,0,1,30.2,2.6L174.8,174.7h0Z" transform="translate(0)"/>
+  <path style="transition: fill .3s ease-out; " id="a2" d="M205,3.2A173.65,173.65,0,0,1,234.1,11L174.7,174.8h0Z" transform="translate(0)"/>
+  <path style="transition: fill .3s ease-out; " id="a3" d="M234.3,11a176,176,0,0,1,27.5,12.8l-87,151h0Z" transform="translate(0)"/>
+  <path style="transition: fill .3s ease-out; " id="a4" d="M261.9,23.9a168.53,168.53,0,0,1,24.7,17.3L174.7,174.8h0Z" transform="translate(0)"/>
+  <path style="transition: fill .3s ease-out; " id="a5" d="M286.7,41.3a180.22,180.22,0,0,1,21.4,21.4L174.7,174.8h0Z" transform="translate(0)"/>
+  <path style="transition: fill .3s ease-out; " id="a6" d="M308.2,62.8a176.52,176.52,0,0,1,17.3,24.7L174.7,174.8h0Z" transform="translate(0)"/>
+  <path style="transition: fill .3s ease-out; " id="a7" d="M325.6,87.6A175,175,0,0,1,338.4,115L174.7,174.7h0Z" transform="translate(0)"/>
+  <path style="transition: fill .3s ease-out; " id="a8" d="M338.4,115.2a171.12,171.12,0,0,1,7.8,29.1L174.6,174.8h0Z" transform="translate(0)"/>
+  <path style="transition: fill .3s ease-out; " id="a9" d="M346.3,144.4a170.42,170.42,0,0,1,2.7,30.2l-174.2.2h0Z" transform="translate(0)"/>
+  <path style="transition: fill .3s ease-out; " id="a10" d="M349,174.8a180.23,180.23,0,0,1-2.6,30.2L174.8,174.8Z" transform="translate(0)"/>
+  <path style="transition: fill .3s ease-out; " id="a11" d="M346.3,205.1a183.78,183.78,0,0,1-7.8,29.1L174.7,174.8h0Z" transform="translate(0)"/>
+  <path style="transition: fill .3s ease-out; " id="a12" d="M338.4,234.4a170.82,170.82,0,0,1-12.8,27.4l-151-87h0Z" transform="translate(0)"/>
+  <path style="transition: fill .3s ease-out; " id="a13" d="M325.6,262a168.53,168.53,0,0,1-17.3,24.7L174.7,174.8h0Z" transform="translate(0)"/>
+  <path style="transition: fill .3s ease-out; " id="a14" d="M308.2,286.8a180.22,180.22,0,0,1-21.4,21.4L174.7,174.8h0Z" transform="translate(0)"/>
+  <path style="transition: fill .3s ease-out; " id="a15" d="M286.7,308.3A176.52,176.52,0,0,1,262,325.6L174.7,174.8h0Z" transform="translate(0)"/>
+  <path style="transition: fill .3s ease-out; " id="a16" d="M261.9,325.7a175,175,0,0,1-27.4,12.8L174.8,174.8h0Z" transform="translate(0)"/>
+  <path style="transition: fill .3s ease-out; " id="a17" d="M234.3,338.5a181,181,0,0,1-29.1,7.8L174.7,174.7h0Z" transform="translate(0)"/>
+  <path style="transition: fill .3s ease-out; " id="a18" d="M205,346.4a180.35,180.35,0,0,1-30.2,2.7l-.1-174.2h0Z" transform="translate(0)"/>
+  <path style="transition: fill .3s ease-out; " id="a19" d="M174.7,349a177,177,0,0,1-30-2.6l30-171.6h0Z" transform="translate(0)"/>
+  <path style="transition: fill .3s ease-out; " id="a20" d="M144.5,346.4a186.14,186.14,0,0,1-29.3-7.8l59.5-163.8h0Z" transform="translate(0)"/>
+  <path style="transition: fill .3s ease-out; " id="a21" d="M115.1,338.5a173.41,173.41,0,0,1-27.3-12.7l86.9-151h0Z" transform="translate(0)"/>
+  <path style="transition: fill .3s ease-out; " id="a22" d="M87.6,325.7a172.41,172.41,0,0,1-24.8-17.4L174.7,174.7h0Z" transform="translate(0)"/>
+  <path style="transition: fill .3s ease-out; " id="a23" d="M62.7,308.3A178.55,178.55,0,0,1,41.4,287L174.7,174.8h0Z" transform="translate(0)"/>
+  <path style="transition: fill .3s ease-out; " id="a24" d="M41.3,286.8A172.41,172.41,0,0,1,23.9,262l150.8-87.3h0Z" transform="translate(0)"/>
+  <path style="transition: fill .3s ease-out; " id="a25" d="M23.8,261.9A175,175,0,0,1,11,234.5l163.7-59.7h0Z" transform="translate(0)"/>
+  <path style="transition: fill .3s ease-out; " id="a26" d="M10.9,234.3a181,181,0,0,1-7.8-29.1l171.6-30.4h0Z" transform="translate(0)"/>
+  <path style="transition: fill .3s ease-out; " id="a27" d="M3.1,205A170.3,170.3,0,0,1,.5,174.8l174.2-.1h0Z" transform="translate(0)"/>
+  <path style="transition: fill .3s ease-out; " id="a28" d="M.5,174.7a177,177,0,0,1,2.6-30l171.6,30.1h0Z" transform="translate(0)"/>
+  <path style="transition: fill .3s ease-out; " id="a29" d="M3.1,144.5a186.14,186.14,0,0,1,7.8-29.3l163.8,59.5h0Z" transform="translate(0)"/>
+  <path style="transition: fill .3s ease-out; " id="a30" d="M11,115.1A173.41,173.41,0,0,1,23.7,87.8l151,86.9h0Z" transform="translate(0)"/>
+  <path style="transition: fill .3s ease-out; " id="a31" d="M23.8,87.7A172.41,172.41,0,0,1,41.2,62.9L174.8,174.8h0Z" transform="translate(0)"/>
+  <path style="transition: fill .3s ease-out; " id="a32" d="M41.3,62.7A178.54,178.54,0,0,1,62.6,41.4L174.8,174.7h0Z" transform="translate(0)"/>
+  <path style="transition: fill .3s ease-out; " id="a33" d="M62.7,41.3A172.41,172.41,0,0,1,87.5,23.9l87.2,150.8h0Z" transform="translate(0)"/>
+  <path style="transition: fill .3s ease-out; " id="a34" d="M87.6,23.9a169.33,169.33,0,0,1,27.3-12.7l59.8,163.7h0Z" transform="translate(0)"/>
+  <path style="transition: fill .3s ease-out; " id="a35" d="M115.1,11.1a175.07,175.07,0,0,1,29.2-7.9l30.4,171.6h0Z" transform="translate(0)"/>
+  <path style="transition: fill .3s ease-out; " id="a36" d="M144.5,3.2a177,177,0,0,1,30-2.6l.2,174.2h0Z" transform="translate(0)"/>
+  <circle style="transition: fill .3s ease-out; " id="cls-8" cx="174.7" cy="174.8" r="67.9"/>
+  <path style="transition: fill .3s ease-out; " id="s1" d="M174.7,121a53.81,53.81,0,0,1,46.6,80.7l-46.6-26.9h0Z" transform="translate(0)"/>
+  <path style="transition: fill .3s ease-out; " id="s2" d="M221.3,201.7a53.75,53.75,0,0,1-93.1.1l46.6-26.9h0Z" transform="translate(0)"/>
+  <path style="transition: fill .3s ease-out; " id="s3" d="M128.1,201.7A53.8,53.8,0,0,1,174.6,121l.1,53.8h0Z" transform="translate(0)"/>
+  <g style="transition: fill .3s ease-out; " id="cls-12">
+    <text style="transition: fill .3s ease-out; " id="cls-13" transform="translate(156.3 210.6)">Mitigé</text>
+ 
+  </g>
+  <g style="transition: fill .3s ease-out; " id="cls-12">
+    <text style="transition: fill .3s ease-out; " id="cls-15" transform="translate(136.4 165.9)">Pour</text>
+    <text style="transition: fill .3s ease-out; " id="cls-14" transform="translate(142.48 165.9)"></text>
+  </g>
+  <g style="transition: fill .3s ease-out; " id="cls-12">
+    <text style="transition: fill .3s ease-out; " id="cls-16" transform="translate(180.69 165.9)">Contre</text>
+
    
-    
-    
-    <path style="transition: stroke .3s ease-out; fill:none;stroke-width:225px;" id="s1" d="M1257.44,944.19a306.19,306.19,0,1,1-497.93,238.74" transform="translate(-318.11 -459.96)"/>
-    
-    
-    <path style="transition: stroke .3s ease-out; fill:none;stroke-width:225px;" id="s2" d="M755,1174.77A306.2,306.2,0,0,1,1253,936" transform="translate(-318.11 -459.96)"/>
-
-<text class="cls-5" transform="translate(79.18 453.82)"><tspan class="cls-6">A</tspan><tspan class="cls-7" x="34.59" y="0">c</tspan><tspan class="cls-8" x="61.17" y="0">t</tspan><tspan x="79.91" y="0">eur 1</tspan></text><text class="cls-5" transform="translate(1227.91 561.71)"><tspan class="cls-6">A</tspan><tspan class="cls-7" x="34.59" y="0">c</tspan><tspan class="cls-8" x="61.17" y="0">t</tspan><tspan x="79.91" y="0">eur 2</tspan></text><text class="cls-5" transform="translate(399.65 1299.23)"><tspan class="cls-6">A</tspan><tspan class="cls-7" x="34.59" y="0">c</tspan><tspan class="cls-8" x="61.17" y="0">t</tspan><tspan x="79.91" y="0">eur 3</tspan></text><text class="cls-5" transform="translate(775.81 995.53)">Sujet 1</text><text class="cls-5" transform="translate(527.34 484.23)">Sujet 2</text>
-
-
-
-</svg>    
+  </g>
+</svg>
+ 
     
     
     
     <script>
 for (var i = 0; i < Acteurs_colors.length; i += 1) {
- document.getElementById('a'+(i+1)).setAttribute('stroke', Acteurs_colors[i]);      
+    console.log(i);
+ document.getElementById('a'+(i+1)).setAttribute('fill', Acteurs_colors[i]);      
 }
 for (var i = 0; i < Sujets_colors.length; i += 1) {
- document.getElementById('s'+(i+1)).setAttribute('stroke', Sujets_colors[i]);      
+ document.getElementById('s'+(i+1)).setAttribute('fill', Sujets_colors[i]);      
 }        
        
-    
+
 function AddEvents_acteurs(i) {
        
         document.getElementById('a'+(i+1)).addEventListener("mouseenter", function(e) {
             
-        e.currentTarget.setAttribute('stroke', '#FF17DE'); 
+        e.currentTarget.setAttribute('fill', '#fff'); 
             
             for (var j = 0; j < Acteurs_sujets[i].length; j += 1) {
                 
-        document.getElementById("s" + Acteurs_sujets[i][j]).setAttribute('stroke', '#FF17DE');
+        document.getElementById("s" + Acteurs_sujets[i][j]).setAttribute('fill', '#fff');
                
             }
 });
      document.getElementById('a'+(i+1)).addEventListener("mouseleave", function(e) {
-        e.currentTarget.setAttribute('stroke', Acteurs_colors[i]); 
+        e.currentTarget.setAttribute('fill', Acteurs_colors[i]); 
             for (var j = 0; j < Acteurs_sujets[i].length; j += 1) {
-        document.getElementById("s" + Acteurs_sujets[i][j]).setAttribute('stroke', Sujets_colors[Acteurs_sujets[i][j]-1]);
+        document.getElementById("s" + Acteurs_sujets[i][j]).setAttribute('fill', Sujets_colors[Acteurs_sujets[i][j]-1]);
             }
 });
      
@@ -197,18 +355,18 @@ function AddEvents_sujets(i) {
         
         document.getElementById('s'+(i+1)).addEventListener("mouseenter", function(e) {
             
-        e.currentTarget.setAttribute('stroke', '#FF17DE'); 
+        e.currentTarget.setAttribute('fill', '#fff'); 
             
             for (var j = 0; j < Sujets_acteurs[i].length; j += 1) {
                 
-        document.getElementById("a" + Sujets_acteurs[i][j]).setAttribute('stroke', '#FF17DE');
+        document.getElementById("a" + Sujets_acteurs[i][j]).setAttribute('fill', '#fff');
               
             }
 });
      document.getElementById('s'+(i+1)).addEventListener("mouseleave", function(e) {
-        e.currentTarget.setAttribute('stroke',Sujets_colors[i]); 
+        e.currentTarget.setAttribute('fill',Sujets_colors[i]); 
             for (var j = 0; j < Sujets_acteurs[i].length; j += 1) {
-        document.getElementById("a" + Sujets_acteurs[i][j]).setAttribute('stroke', Acteurs_colors[Sujets_acteurs[i][j]-1]);
+        document.getElementById("a" + Sujets_acteurs[i][j]).setAttribute('fill', Acteurs_colors[Sujets_acteurs[i][j]-1]);
             }
 });
      
@@ -227,7 +385,148 @@ function AddEvents_sujets(i) {
 }   
 
 </script>
+     <script>
+var content = ["<b>Marc Roux </b> </br></br> Marc Roux est président de l’association française transhumaniste. Comme beaucoup d’entre eux, il est convaincu des bénéfices possibles des hautes technologies dans l’existence humaine. Son association, bien qu’encore marginale en France, se réunit régulièrement sur des thèmes liés comme l’intelligence artificielle. Elle organise également quelques débats, colloques et participe à des salons High-Tech.",
+
+"<b>Ariane Van De Ven </b> </br></br> Ariane Van De Ven est consultante en stratégies d’innovation et tendances socio-culturelles dans l’industrie, la grande consommation, le secteur public, les ONG, la mode et le luxe dans le monde entier. Elle organise également des conférences et enseigne dans des universités à Barcelone. Ses convictions s’orientent vers une société future dans laquelle le High-Tech pourra solutionner la plupart de nos problèmes.",
+               
+"<b>Philippe Bihouix </b> <br/></br> Philippe Bihouix est ingénieur centralien et essayiste. Dans ces ouvrages, il souligne les limites du recyclage, de l'économie circulaire et de la croissance verte. Selon lui, il faut réduire notre consommation énergétique, utiliser en partie les énergies renouvelables et revenir à des dispositifs moins complexes plus facilement réparables et recyclables. La passivité de la société face à cet enjeu pourrait entraîner un manque de ressources après un pic de tout ('peak everything', expression du journaliste écologiste Richard Heinberg) qui renforcerait les tensions entre les classes sociales et appauvrirait mondialement les populations. Philippe Bihouix prend également position contre l\'utilisation du numérique dans l'éducation car celui-ci nuit à l'apprentissage de la mémorisation et la concentration.",
+              
+              
+           
+"<b>Navi Radjou</b> <br/></br> Navi Radjou est un conseiller indépendant théoricien de l’économie « frugale ». Selon lui, les prochains défis innovants porteront sur la mise en place de systèmes répondant à nos besoins habituels avec une structure beaucoup plus simple que ce que nous avons l’habitude d’utiliser. A l’inverse des personnes voyant ce point de vue comme une régression, il estime que l’on doit dissocier innovation et ressources matérielles en développant une économie qui révolutionne les systèmes existants au lieu d’en créer des nouveaux. ",
+                            
+ "<b>Corentin de Chatelperron</b> </br><br/>Cet ingénieur de l’institut des Arts et Métiers créé en 2013 l’association Gold of Bengal qui donnera notamment naissance au Low-Tech Lab. Après divers voyages à travers le monde, il est convaincu que les basses technologies sont un moyen viable et durable pour subsister à nos besoins quotidiens. Son combat en faveur des Low-Tech passe par leur promotion en France en les expérimentant lui-même dans des pays en développement où elles sont parfois déjà adoptées.",
+              
+               "<b>Low Tech Lab</b> </br><br/>Projet créé par l’association Gold of Bengal, le Low Tech Lab est une plateforme en ligne qui concentre les basses technologies développées autour du monde pour les promouvoir. L’objectif est de changer les mentalités à grande échelle en tentant d’introduire l’usage des Low-Tech dans notre quotidien et que celles-ci soient prises en considération par les laboratoires de R&D. Le projet s’est notamment fait connaître par l’expédition Nomade des Mers, démarrée il y a 3 ans pour faire un « tour du monde des Low-Tech » dans un bateau 100% autonome : à travers les différentes destinations, on découvre une multitude de basses technologies innovantes utilisées au quatre coins du monde pour répondre aux besoins de première nécessité des populations locales. Il s’agit probablement d’une des initiatives de promotion des Low-Tech les plus réussies.",
+              
+               "<b>Pièces et Mains d’œuvre</b></br> <br/>Collectif anonyme grenoblois fermement opposé aux nouvelles technologies de toute sorte, y voyant non seulement un objet du « pouvoir capitaliste » mais également un instrument d’aliénation favorisant l’effet de groupe. Il est notamment connu pour ses interventions dans les salons High-Tech et un discours offensif et prône le retour des populations à un esprit critique qu’elles ont perdu avec la technologie.",
+              
+               "<b>Geres</b></br> <br/>Groupe Energies Renouvelables, Environnement et Solidarité : L’ONG créée en 1976 s’inscrit dans une mission plus générale de lutte contre la pauvreté dans le respect de l’environnement. Dans cette optique, elle mène depuis quelques années des projets Low-Tech principalement dans des pays du tiers monde. Au-delà de simplement aider les populations en difficulté, le Geres tente de mettre en place des solutions d’aide au développement tout en prenant en compte la finitude des ressources terrestres.",
+              
+               "<b>Mouvement Colibris</b></br> <br/> Créé en 2007 par l’écrivain et penseur français Pierre Rabhi, Colibris est une association catalysant les initiatives visant à changer notre mode de vie à l’échelle individuelle. Ses valeurs privilégient en effet le facteur humain plutôt que l’innovation technologique pour réduire l’impact environnemental de notre activité. Dans le cadre de ce plan d’actions général, le mouvement s’est régulièrement prononcé en faveur des solutions Low-Tech et oeuvre pour leur introduction dans notre société future.",
+              
+               "<b>Envie</b></br> <br/>Fédération de 50 entreprises de l’économie sociale et solidaire présentes dans toute la France, le réseau Envie vise à promouvoir le développement durable, créer des emplois locaux et mettre ses acteurs en lien. Sa mission principale est de récupérer des appareils électroménagers usagés pour les recycler ou les réparer.",
+              
+               "<b>Scouts et Guides de France</b> </br><br/>Cette branche catholique du scoutisme est partenaire de Low Tech Lab et encourage toutes les initiatives “HALP” (Habiter Autrement La Planète), c’est-à-dire éco-responsables. Les scouts sont sensibles aux basses technologies car ils campent dans la nature avec des moyens simples. Par exemple, une unité scoute de Quimper a réalisé un projet de fabrication de basses technologies en janvier dernier pour les utiliser durant leur camp d’été.",
+               
+                "<b>Greenpeace</b> </br><br/>Depuis ces dernières années, l’ONG connue pour ses expéditions en mer a clairement pris position en faveur de solutions pour la préservation de l’environnement. Pour cela, son combat s’appuie sur la sensibilisation des populations à l’impact environnemental des appareils électroniques et plus généralement de l'avènement du Big Data dans notre société. Cependant, elle croit plus largement à une mise en place des énergies renouvelables plutôt que des Low-Tech pour répondre aux prochains défis environnementaux, même s’il lui arrive d’en faire la promotion de temps à autres sur son site ou sa page Facebook.",
+              
+               "<b>Mediapart</b></br> <br/> Mediapart est sûrement le média de presse le plus tranché sur ses positions vis à vis des Low-Tech. Il s’oppose fermement au modèle de croissance libérale pour l’économie. Ses journalistes sont convaincus que ce modèle est indissociable d’une consommation forte en énergie, de gaspillage, de chômage et d’inégalités sociales accrues. Les basses technologies sont clairement mises en avant dans ses articles comme alternative viable à l’économie du futur.",
+              
+               "<b>Reporterre</b></br> <br/>Reporterre est un site web d’écologie. Bien que sa ligne éditoriale porte sur l’écologie en général, il est l’un des médias qui donnent le plus parole aux acteurs des low-tech tels que Philippe Bihouix ou encore Corentin de Chatelperron.",
+               
+                  "<b>Low Tech Magazine</b></br> <br/>Ce blog a été créé et est tenu par Kris de Decker, écrivain qui refuse de penser que tout problème a une solution high tech. Il présente donc diverses basses technologies venues du monde entier. Kris de Decker a écrit plusieurs livres sur le sujet et tient aussi un blog plus extrème : No Tech Magazine.",
+               
+                 "<b>Usbek & Rica</b></br> <br/>Il s’agit d’un média indépendant axé sur la problématique de notre société future : la ligne d’édition ne cherche pas forcément à prendre parti plutôt pour les Low ou les High-Tech mais d’explorer chacune d’elles en analysant ses apports potentiels au développement humain. Ses journalistes ne ferment donc la porte à aucune innovation. Il prétend se placer entre l' ”anti-technicisme ignorant” et le “technicisme intempérant”. ",
+               
+               
+                 "<b>Les Echos</b></br> <br/>Comme sur de nombreux sujets, les médias français principaux font plutôt office de relais d’informations pour les partisans du High-Tech comme pour leurs détracteurs. La plupart d’entre eux ont montré un intérêt notoire pour le personnage de Philippe Bihouix auquel ils ont tous consacré au moins un article. Si la position décroissante, en faveur de la sobriété et des Low-Tech reste encore marginale dans la société, elle suscite néanmoins de plus en plus d’intérêt dans les quotidiens, qui favorisent leur mise en lumière. ",
+               
+               
+                 "<b>Libération</b></br> <br/>Comme sur de nombreux sujets, les médias français principaux font plutôt office de relais d’informations pour les partisans du High-Tech comme pour leurs détracteurs. La plupart d’entre eux ont montré un intérêt notoire pour le personnage de Philippe Bihouix auquel ils ont tous consacré au moins un article. Si la position décroissante, en faveur de la sobriété et des Low-Tech reste encore marginale dans la société, elle suscite néanmoins de plus en plus d’intérêt dans les quotidiens, qui favorisent leur mise en lumière.",
+               
+               
+                 "<b>Le Figaro</b></br> <br/>Comme sur de nombreux sujets, les médias français principaux font plutôt office de relais d’informations pour les partisans du High-Tech comme pour leurs détracteurs. La plupart d’entre eux ont montré un intérêt notoire pour le personnage de Philippe Bihouix auquel ils ont tous consacré au moins un article. Si la position décroissante, en faveur de la sobriété et des Low-Tech reste encore marginale dans la société, elle suscite néanmoins de plus en plus d’intérêt dans les quotidiens, qui favorisent leur mise en lumière.",
+               
+                  "<b>Leroy Merlin</b></br> <br/>L’entreprise française, leader historique de l’aménagement et du bricolage, tente de promouvoir les Low-Tech dans l’habitat en organisant par exemple le 1er hackathon Low-Tech les 17, 18 et 19 juin dans l’enseigne de son magasin, en partenariat avec l’entreprise américaine TechShop Inc",
+               
+                  "<b>BNP</b></br> <br/>Le groupe bancaire est à l’origine du projet Wave dans lequel peut s’inscrire toute initiative portant sur la promotion des projets visant à répondre aux défis futurs de la société en matière sociale, économique et environnementale. Il compte parmi ses contributeurs aussi bien des personnes oeuvrant pour un futur high-tech que d’autres plutôt en faveur des basses technologies.",
+               
+                  "<b>Renault, SEB</b> </br><br/>Ces deux géants de l’automobile et de l’électroménager, malgré des initiatives clairement en faveur des High-Tech (voitures connectées par exemple), ont entrepris des démarches en faveur de savoir-faire beaucoup plus “Low-Tech”. Renault envisage notamment d’intégrer 20% de plastiques recyclés dans ses voitures. Seb s’est fixé pour objectif de rendre la totalité des ses appareils réparables par les usagers en les rendant plus simples dans leur structure et en investissant en masse dans le commerce des pièces détachées à prix coûtant.",
+               
+                "<b>Renault, SEB</b> </br><br/>Ces deux géants de l’automobile et de l’électroménager, malgré des initiatives clairement en faveur des High-Tech (voitures connectées par exemple), ont entrepris des démarches en faveur de savoir-faire beaucoup plus “Low-Tech”. Renault envisage notamment d’intégrer 20% de plastiques recyclés dans ses voitures. Seb s’est fixé pour objectif de rendre la totalité des ses appareils réparables par les usagers en les rendant plus simples dans leur structure et en investissant en masse dans le commerce des pièces détachées à prix coûtant.",
+               
+                  "<b>Economistes (Michel Godet)</b></br> <br/>Michel Godet est un économiste français membre de l’Académie des technologies. Bien qu’il soit en faveur de la plupart des dernières innovations technologiques, il dénonce régulièrement les mauvais penchants de cette innovation : selon lui, elle est souvent trop axée sur le marketing au lieu de réels besoins des usagers. Il souhaite que l’innovation soit d’abord profitable aux citoyens et soutient donc les solutions Low-Tech.",
+               
+               "<b>Jean-Vincent Placé</b></br> <br/>Jean-Vincent Placé est sénateur de  l’Essonne et président du groupe Europe-Écologie-Les-Verts au Sénat.  Il a proposé le 18 mars 2013 un projet de loi au Bureau de la présidence du Sénat afin de lutter contre l'obsolescence programmée. Jean-Vincent Placé demande aussi à ce que les directives européennes soient appliquées. Cette proposition a été reprise dans le projet de loi sur la consommation.",
+               
+               "<b>Benoît Hamon</b></br> <br/>Benoît Hamon est a été ministre délégué à l’Économie sociale et solidaire et à la Consommation auprès de Pierre Moscovici de mai 2012 à avril 2014 et a proposé la loi Consommation qui a été adoptée en mars 2014. Un des points majeurs de cette loi est l’accès à une consommation durable et responsable, génératrice d’emplois de proximité. En tant que candidat à l'élection présidentielle, Benoît Hamon a aussi dit vouloir accélérer la transition écologique en portant à 50 % dès 2025 la part des renouvelables dans la production d'énergie, ainsi que lutter contre les pesticides et les perturbateurs endocriniens. Il veut en « abroger la déclaration d’utilité publique » et « stopper le projet d'aéroport de Notre-Dame-des-Landes ».",
+               
+               "<b>Jean-Luc Mélenchon </b></br> <br/>Jean-Luc Mélenchon était candidat présidentiel en 2017. Il prévoyait les mesures suivantes : <br/><br/>  - Allonger les durées de garantie légale des produits dans l’ensemble des secteurs industriels ; <br/> <br/>  - Planifier des taux croissants de réemploi des pièces détachées et de recyclabilité, et favoriser l’usage de produits recyclables (…) ; <br/> <br/> - Favoriser l’usage plutôt que la possession, par l’encouragement des pratiques comme la location, le prêt ou la mutualisation (…) ; <br/> <br/>  - Financer la Recherche & Développement sur la réparabilité des biens de consommation ; <br/><br/> - Introduire de vrais objectifs de prévention dans les dispositifs de responsabilité élargie du producteur (REP), afin d’inciter réellement les entreprises à ne pas générer de déchets. ». ",
+               
+               "<b>Emannuel Macron</b></br> <br/>Emmanuel Macron est  président de la République française. Son programme de candidat présidentiel, révélé le 2 mars indique que « Nous renforcerons la lutte contre l’obsolescence programmée en renforçant l’affichage de la durée de vie des appareils électroménagers. »",
+               
+               "<b>Ségolène Royal</b> </br><br/>Ségolène Royal est ancienne  ministre de l'Écologie, du Développement durable et de l'Énergie. Elle a proposé un loi et voté la loi relative à la transition énergétique pour la croissance verte l’objectif et le mesure sur l’économie des ressources en 2015.",
+               
+               "<b>François Hollande & Najat Vallaud Belkacem</b></br> <br/>Grandes mesures : <br/> Plan gouvernemental industriel “objets connectés” en mars 2014 <br/> Plan gouvernemental “L’école numérique” entamé à la rentrée 2016",
+               
+               "<b>François Hollande & Najat Vallaud Belkacem</b> </br><br/>Grandes mesures : <br/> Plan gouvernemental industriel “objets connectés” en mars 2014 <br/> Plan gouvernemental “L’école numérique” entamé à la rentrée 2016",
+               
+                "<b>Hommes politiques de droite</b> </br><br/>La plupart des hommes politiques de droite en France, regroupés sous le parti des Républicains, montrent une certaine réticence envers des mesures concernant le problème des ressources. Nicolas Sarkozy a notamment fait plusieurs sorties médiatiques laissant sous-entendre l’agacement vis-à-vis de l’introduction du problème écologique dans l’économie, en la présentant souvent comme un frein à la compétitivité des entreprises françaises. Pour ceux qui se sont plus prononcés sur ce sujet, les initiatives portaient plus largement sur une innovation technologique à travers les énergies renouvelables plutôt que des solutions Low-Tech.",
+               
+                "<b>Bertin Nahum </b> </br><br/>Bertin Nahum est un entrepreneur spécialisé dans le secteur du biomédical de pointe. Après avoir lancé Medtech rachetée par l’Américain Zimmer Biomet, il lance cette année une nouvelle startup concevant des robots destinés à l’assistance des chirurgiens pendant leurs opérations. Ce type de dispositif connaît une adhésion quasi-générale auprès des experts l’utilisant, leur apportant plus de précision dans leurs interventions.",
+               
+                "<b>Eric Carreel</b></br> <br/>Cet entrepreneur né en 1959 a suivi l’essor des télécommunications avant de se spécialiser dans les dernières High-tech les plus prometteuses en lançant trois startups Withings (objets connectés liés à la santé), Sculpteo (impression 3D)  et Invoxia (Téléphonie IP de haute qualité). Ces dernières années, Eric Carreel a entamé des démarches significatives pour l’intégration des objets connectés dans l’industrie du futur, et a d’ailleurs été nommé chef de file du plan industriel gouvernemental français “objets connectés” en 2014. Au-delà de l’aide aux chirurgiens par les machines High-Tech, l’entrepreneur voue également les vertus des objets connectés dans la santé pour la facilitation du suivi des patients d’un médecin. Selon lui, il s’agit de “casser le mur qui sépare le cabinet du praticien et le domicile du patient”.",
+               
+                "<b>Cédric Hutchings</b> </br><br/>CEO de Withings, Cédric Hutchings est convaincu du bien fondé d’intégrer de la connectivité dans nos objets du quotidien. Comme beaucoup d’entrepreneurs de ce domaine, il insiste sur le rôle à jouer de ces objets pour un suivi plus fin de la santé des personnes qui les utilisent. Il est notamment à l’origine de la balance connectée lancée en 2009 par son entreprise.",
+               
+                "<b>Sigfox</b></br> <br/>Sigfox est un opérateur Télécom basé dans la région de Toulouse qui propose le premier réseau cellulaire pour l’Internet des Objets. Il utilise une technologie UNB (Ultra Narrow Band) à bas débit permettant une communication longue portée low-cost et peu gourmande en énergie. Le service s’est étendu dans 29 pays du monde. ",
+               
+               
+              
+               
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              ];
+var namehover=["Marc Roux","Ariane Van de Ven","Philippe Bihouix","Navi Radjou","Corentin de Chatelperron","Low Tech Lab","Pièces et main d’oeuvre","Geres","Mouvement Colibris", "Envie","Scout et guides de France", "Greenpeace", "Mediapart", "Reporterre", "Low tech Magazine", "Usbek & Rica", "Les Echos", "Libération", "Figaro", "Leroy Merlin", "BNP", "Renault", "Seb", "Economistes (Michel Godet)", "Jean Vincent Placé", "Benoît Hamon", "Jean Luc Mélenchon", "Emmanuel Macron", "Ségolène Royal", "François Hollande", "Najat Vallaud Belkacem", "Hommes politiques de droite", "Bertin Nahum", "Eric Carreel", "Cédric Hutchings", "Sigfox"] ;        
+function AddContent(i){
+
+$('#a' + (i+1)).click(function(){
+
+$("#sp").html(content[i]);
+});
+
+ }
+         function addTitle(i){
+
+$('#a' + (i+1)).hover(function(){
+
+$("#name").html(namehover[i]);
+    
+    $("#sp2").html("");   
+});
+
+             
+ }
+
+for (var i = 0; i < Acteurs_sujets.length; i += 1) {
+addTitle(i);
+    AddContent(i);
+}
+
+            function addSubTitles(i,content){
+
+$('#s' + (i+1)).hover(function(){
+    console.log(j);
+console.log(Sujets_acteurs[i][j]);
+$("#sp2").html(content);
+});
+}
+      var contentName="<b> Acteurs concernés : </b> <br/><br/>";       
  
+         for (var i = 0; i < Sujets_acteurs.length; i += 1) {
+             for (var j =0; j<Sujets_acteurs[i].length;j+=1){
+                    contentName+=namehover[Sujets_acteurs[i][j]-1]+'<br/>';
+             }
+             addSubTitles(i,contentName);
+             contentName="<b> Acteurs concernés : </b> <br/><br/>";
+             $('#s' + (i+1)).hover(function(){
+
+$("#name").html("");
+$("#sp").html("");                 
+});
+}
+  
+
+</script>
         </div></div></div>
 </section>
 

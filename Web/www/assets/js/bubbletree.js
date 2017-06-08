@@ -2002,7 +2002,7 @@ BubbleTree.Bubbles.Plain = function(node, bubblechart, origin, radius, angle, co
 
 		var showIcon = false; //this.bubbleRad * this.bc.bubbleScale > 30;
 
-		if (!me.node.shortLabel) me.node.shortLabel = me.node.label.length > me.bc.config.cutLabelsAt+3 ? me.node.label.substr(0, me.bc.config.cutLabelsAt)+'...' : me.node.label;
+		if (!me.node.shortLabel) me.node.shortLabel = me.node.label.length > me.bc.config.cutLabelsAt+300 ? me.node.label.substr(0, me.bc.config.cutLabelsAt)+'...' : me.node.label;
 
 		me.initialized = true;
 
@@ -2114,9 +2114,9 @@ BubbleTree.Bubbles.Plain = function(node, bubblechart, origin, radius, angle, co
 			.attr({ stroke: '#ffffff', 'stroke-dasharray': "- " });
 
 
-		me.label = $('<div class="bubbletree-label '+me.node.id+'"><div class="bubbletree-amount">'+
-      me.bc.config.formatValue(me.node.amount)+'</div><div class="bubbletree-desc">'+
-      me.node.shortLabel+'</div></div>');
+		me.label = $('<div class="bubbletree-label '+me.node.id+'"><div class="'+
+      me.bc.config.formatValue(me.node.amount)+'"><div class="bubbletree-desc">'+
+      me.node.shortLabel+'</div></div></div>');
 		me.container.append(me.label);
 
 		if (me.node.children.length > 0) {
@@ -2210,7 +2210,7 @@ BubbleTree.Bubbles.Donut = function(node, bubblechart, origin, radius, angle, co
 
 		var breakdown = [], b, i, val, bd = [], styles = me.bc.config.bubbleStyles;
 
-		if (!me.node.shortLabel) me.node.shortLabel = me.node.label.length > 50 ? me.node.label.substr(0, 30)+'...' : me.node.label;
+		if (!me.node.shortLabel) me.node.shortLabel = me.node.label.length > 100 ? me.node.label.substr(0, 30)+'...' : me.node.label;
 
 		me.breakdownOpacities = [0.2, 0.7, 0.45, 0.6, 0.35];
 		me.breakdownColors = [false, false, false, false, false, false, false, false, false, false];
@@ -2361,9 +2361,9 @@ BubbleTree.Bubbles.Donut = function(node, bubblechart, origin, radius, angle, co
 		me.dashedBorder = me.paper.circle(me.pos.x, me.pos.y,  r*0.85)
 			.attr({ stroke: '#fff', 'stroke-opacity': me.alpha * 0.4,  'stroke-dasharray': ". ", fill: false });
 
-		me.label = $('<div class="bubbletree-label '+me.node.id+'"><div class="bubbletree-amount">'+
-      me.bc.config.formatValue(me.node.amount)+'</div><div class="bubbletree-desc">'+
-      me.node.shortLabel+'</div></div>');
+		me.label = $('<div class="bubbletree-label '+me.node.id+'"><div class="'+
+      me.bc.config.formatValue(me.node.amount)+'"><div class="bubbletree-desc">'+
+      me.node.shortLabel+'</div></div></div>');
 		me.bc.$container.append(me.label);
 
 		if (me.node.children.length > 1) {
@@ -2504,7 +2504,7 @@ BubbleTree.Bubbles.Icon = function(node, bubblechart, origin, radius, angle, col
 
 		me.hasIcon = me.node.hasOwnProperty('icon');
 
-		if (!me.node.shortLabel) me.node.shortLabel = me.node.label.length > 50 ? me.node.label.substr(0, 30)+'...' : me.node.label;
+		if (!me.node.shortLabel) me.node.shortLabel = me.node.label.length > 100 ? me.node.label.substr(0, 100)+'...' : me.node.label;
 
 		/*if (showIcon) {
 			me.icon = me.paper.path("M17.081,4.065V3.137c0,0,0.104-0.872-0.881-0.872c-0.928,0-0.891,0.9-0.891,0.9v0.9C4.572,3.925,2.672,15.783,2.672,15.783c1.237-2.98,4.462-2.755,4.462-2.755c4.05,0,4.481,2.681,4.481,2.681c0.984-2.953,4.547-2.662,4.547-2.662c3.769,0,4.509,2.719,4.509,2.719s0.787-2.812,4.557-2.756c3.262,0,4.443,2.7,4.443,2.7v-0.058C29.672,4.348,17.081,4.065,17.081,4.065zM15.328,24.793c0,1.744-1.8,1.801-1.8,1.801c-1.885,0-1.8-1.801-1.8-1.801s0.028-0.928-0.872-0.928c-0.9,0-0.957,0.9-0.957,0.9c0,3.628,3.6,3.572,3.6,3.572c3.6,0,3.572-3.545,3.572-3.545V13.966h-1.744V24.793z")
@@ -2534,9 +2534,9 @@ BubbleTree.Bubbles.Icon = function(node, bubblechart, origin, radius, angle, col
 			me.bc.config.initTooltip(me.node, me.circle.node);
 		}
 
-		me.label = $('<div class="bubbletree-label '+me.node.id+'"><div class="bubbletree-amount">'+
-      me.bc.config.formatValue(me.node.amount)+'</div><div class="bubbletree-desc">'+
-      me.node.shortLabel+'</div></div>');
+		me.label = $('<div class="bubbletree-label '+me.node.id+'"><div class="'+
+      me.bc.config.formatValue(me.node.amount)+'"><div class="bubbletree-desc">'+
+      me.node.shortLabel+'</div></div></div>');
 		me.bc.$container.append(me.label);
 
 		if ($.isFunction(me.bc.config.initTooltip)) {
