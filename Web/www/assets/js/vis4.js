@@ -503,7 +503,7 @@ var vis4color = function(mode) {
 
 	// hsi magic
 
-	this.rgb2hsi = function() { // http://fourier.eng.hmc.edu/e161/lectures/colorprocessing/node3.html
+	this.rgb2hsi = function() { // https://fourier.eng.hmc.edu/e161/lectures/colorprocessing/node3.html
 		var min, r = this.r, g = this.g, b = this.b,
 			max = Math.max(Math.max(r, g), b),
 			sum = r + g + b,
@@ -523,7 +523,7 @@ var vis4color = function(mode) {
 		if (b > g) this.h = 360 - this.h;
 	};
 
-	this.hsi2rgb = function() { // http://fourier.eng.hmc.edu/e161/lectures/colorprocessing/node4.html
+	this.hsi2rgb = function() { // https://fourier.eng.hmc.edu/e161/lectures/colorprocessing/node4.html
 		var h = this.h,i=this.i,s=this.s, r, b, g, cos = this.cos;
 
 		if (h <= 120) {
