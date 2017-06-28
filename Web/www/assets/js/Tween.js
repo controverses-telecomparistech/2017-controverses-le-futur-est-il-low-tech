@@ -1,9 +1,9 @@
 /**
  * Tween.js - Licensed under the MIT license
- * httpss://github.com/tweenjs/tween.js
+ * https://github.com/tweenjs/tween.js
  * ----------------------------------------------
  *
- * See httpss://github.com/tweenjs/tween.js/graphs/contributors for the full list of contributors.
+ * See https://github.com/tweenjs/tween.js/graphs/contributors for the full list of contributors.
  * Thank you all, you're awesome!
  */
 

@@ -1,7 +1,7 @@
 /*
 * Timeliner.js
 * @version      2.31
-* @copyright    Tarek Anandan (https://www.technotarek.com)
+* @copyright    Tarek Anandan (http://www.technotarek.com)
 */
 ;(function($) {
 

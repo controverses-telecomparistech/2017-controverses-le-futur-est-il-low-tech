@@ -2,11 +2,11 @@
  * jQuery-csv (jQuery Plugin)
  *
  * This document is licensed as free software under the terms of the
- * MIT License: https://www.opensource.org/licenses/mit-license.php
+ * MIT License: http://www.opensource.org/licenses/mit-license.php
  *
  * Acknowledgements:
  * The original design and influence to implement this library as a jquery
- * plugin is influenced by jquery-json (https://code.google.com/p/jquery-json/).
+ * plugin is influenced by jquery-json (http://code.google.com/p/jquery-json/).
  * If you're looking to use native JSON.Stringify but want additional backwards
  * compatibility for browsers that don't support it, I highly recommend you
  * check it out.
@@ -14,7 +14,7 @@
  * A special thanks goes out to rwk@acm.org for providing a lot of valuable
  * feedback to the project including the core for the new FSM
  * (Finite State Machine) parsers. If you're looking for a stable TSV parser
- * be sure to take a look at jquery-tsv (https://code.google.com/p/jquery-tsv/).
+ * be sure to take a look at jquery-tsv (http://code.google.com/p/jquery-tsv/).
 
  * For legal purposes I'll include the "NO WARRANTY EXPRESSED OR IMPLIED.
  * USE AT YOUR OWN RISK.". Which, in 'layman's terms' means, by using this
